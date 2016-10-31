@@ -1,6 +1,7 @@
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 refreshenv
-choco install -y cmder atom nodejs sourcetree
+choco install -y cmder atom nodejs sourcetree python
+choco install -y --force python --version 2.7.11
 refreshenv
 apm install atom-typescript pigments emmet atom-beautify
 npm install npm@latest -g
